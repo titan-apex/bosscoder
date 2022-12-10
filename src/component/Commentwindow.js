@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Commentwindow.module.css";
+
 function Commentwindow() {
   const [comment, setComment] = useState([]);
 
@@ -18,7 +19,7 @@ function Commentwindow() {
             <button onClick={showComment}>Submit</button>
           </div>
           {comment.map((com, i) => {
-            console.log(i);
+            //console.log(i);
             return <div>{comment[comment.length - i - 1]}</div>;
           })}
         </div>
